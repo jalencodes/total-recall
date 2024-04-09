@@ -1,3 +1,7 @@
+
+// Section 1
+console.log('\n1. Variables & Data types\n\n');
+
 // Part A
 
 let myName              = 'Jalen'
@@ -57,9 +61,9 @@ else{
     console.log("Sorry, you're too young.");
 }
 
-/*
-Loops
-*/
+
+// Section 2
+console.log('\n2. Loops\n\n');
 
 //Part A
 console.log("Part A\n");
@@ -90,3 +94,62 @@ for(let i = 1; i < 101; i++)
         console.log(i);
     }
 }
+
+// Part C
+console.log("Part C\n");
+for(let i = 1; i < 101; i++)
+{
+    let message = `I found a ${i} `
+    let printMessage = false
+    if (i%5 == 0){
+        message += 'High Five! '
+        printMessage = true
+    }
+    if (i%3 == 0){ 
+        message += 'Three is a crowd'
+        printMessage = true
+    }
+    if (printMessage) {console.log(message);}
+}
+
+// Part D
+console.log("Part D\n");
+let bankAccount = 0
+for(let i = 1; i <= 10; i++)
+{
+    bankAccount += i
+}
+console.log(`You have $${bankAccount} in your bank account`);
+
+
+
+// Section 3
+
+console.log('\n3. Arrays & Control flow\n\n');
+
+//Part F
+console.log("Part F\n");
+let num = 8
+if (num < 100)
+{
+    console.log("little number");
+}
+else {
+    console.log("big number");
+}
+
+//Part G
+console.log("\nPart G\n");
+if (num < 5)
+{
+    console.log(`${num} is a little number`);
+}
+else if(num > 10)
+{
+    console.log(`${num} is a big number`);
+}
+else
+{
+    console.log(`${num} is a monkey`);
+}
+
