@@ -294,3 +294,85 @@ updateUser()
 console.log(user);
 oldAndLoud(user)
 console.log(user);
+
+
+console.log('\nFunctions');
+console.log('\nPart A');
+function printGreeting(name)
+{
+    return `Hello there, ${name}!`
+}
+
+
+console.log('\nPart B');
+function printCool(name)
+{
+    return `${name} is cool`;
+}
+console.log('\nPart C');
+function calculateCube(num)
+{
+    return num * num * num
+}
+console.log('\nPart D');
+function isVowel(char)
+{
+    char = char.toLocaleUpperCase()
+    if (char == 'A' || char == 'E' || char == 'I' || char == 'O' || char == 'U'){
+        return true
+    }
+    else{
+        return false
+    }
+
+}
+console.log('\nPart E');
+function getTwoLengths(str1, str2)
+{
+    return [str1.length, str2.length]
+}
+console.log('\nPart F');
+function getMultipleLengths(arr)
+{
+    lenArr = []
+    for(let a of arr) {lenArr.push(a.length)}
+    return lenArr
+}
+console.log('\nPart G');
+function maxOfThree(num1, num2, num3)
+{
+    max = num1
+    if (num2 > num1){ max = num2 }
+    if (num3 > max) { max = num3 }
+    return max
+}
+console.log('\nPart H');
+function printLongestWord(arr)
+{
+    longest = arr[0]
+    for(let a of arr)
+    {
+        if (a.length > longest.length) { longest = a }
+    }
+    return longest
+}
+
+let A = 'Slimer'
+let B = 'Jalen'
+let C = 8
+let D = 'c'
+let E1 = 'Thomas'
+let E2 = 'Thompson'
+let F = [A, B, D, E1, E2]
+let G1 = C
+let G2 = 10
+let G3 = 14
+let H = F
+console.log(printGreeting(A));
+console.log(printCool(B));
+console.log(calculateCube(C));
+console.log(isVowel(D));
+console.log(getTwoLengths(E1, E2));
+console.log(getMultipleLengths(F));
+console.log(maxOfThree(G1,G2,G3));
+console.log(printLongestWord(H));
